@@ -1,0 +1,246 @@
+@media (max-width: 650px) {
+  .contact-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .contact-actions > a:first-child {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+    height: 64px;
+    gap: 8px;
+    padding: 0 10px;
+    font-size: clamp(10px, 3.5vw, 15px);
+  }
+
+  .contact-actions > a:not(:first-child) {
+    width: 100%;
+    min-width: 0;
+    height: 62px;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px 2px;
+    font-size: 10px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .contact-actions > a:not(:first-child) > svg {
+    display: none;
+  }
+
+  .contact-actions .social-pill {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-actions .social-pill svg {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-box {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.mobile-contact-socials {
+  display: none;
+}
+
+.footer-brand-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-phone-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-phone-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #b9c0cd;
+  font-size: 13px;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.footer-phone-links a svg {
+  flex: 0 0 auto;
+  color: #76c6d4;
+}
+
+.footer-phone-links a:hover {
+  color: #fff;
+}
+
+@media (min-width: 651px) and (max-width: 1320px) {
+  .contact-actions {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .contact-actions > a:first-child {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+    height: 66px;
+    padding: 0 18px;
+    font-size: clamp(14px, 1.8vw, 16px);
+  }
+
+  .contact-actions > a:not(:first-child) {
+    width: 100%;
+    min-width: 0;
+    height: 58px;
+    gap: 8px;
+    padding: 0 8px;
+    font-size: clamp(12px, 1.5vw, 14px);
+  }
+
+  .contact-actions .social-pill {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-actions .social-pill svg {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-modal-backdrop {
+    align-items: center;
+    padding: 12px;
+  }
+
+  .contact-modal {
+    width: 100%;
+    max-width: 480px;
+    height: min(90vh, 760px);
+    height: min(90dvh, 760px);
+    max-height: calc(100vh - 24px);
+    max-height: calc(100dvh - 24px);
+    grid-template-columns: minmax(0, 1fr);
+    border-radius: 20px;
+  }
+
+  .contact-panel {
+    display: none;
+  }
+
+  .form-panel {
+    min-width: 0;
+    min-height: 0;
+    padding: 24px 20px 20px;
+  }
+
+  .modal-close {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    margin: -8px 0 10px auto;
+  }
+
+  .form-header {
+    margin-top: 0;
+    padding-right: 28px;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+
+  .form-subtitle {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .mobile-contact-socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .mobile-contact-socials a {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    border: 1px solid rgba(23, 32, 51, .14);
+    border-radius: 50%;
+    background: #fff;
+    color: var(--ink);
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+  }
+
+  .mobile-contact-socials a:hover {
+    transform: translateY(-2px);
+    border-color: rgba(23, 32, 51, .3);
+    background: #f7fafb;
+  }
+
+  .mobile-contact-socials a:focus-visible {
+    outline: 2px solid #35aeca;
+    outline-offset: 2px;
+  }
+
+  .mobile-contact-socials .social-icon,
+  .mobile-contact-socials .social-icon svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact-form {
+    margin-top: 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .field {
+    gap: 6px;
+  }
+
+  .field input,
+  .field select {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+
+  .field textarea {
+    min-height: 92px;
+  }
+
+  .textarea-field {
+    margin-top: 14px;
+  }
+
+  .submit-btn {
+    min-height: 50px;
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+}
